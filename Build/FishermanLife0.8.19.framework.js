@@ -2304,7 +2304,7 @@ var gameanalytics;
                         }
                     }
                 };
-                request.open("POST", url, true);
+                request.open("GET", url, true);
                 request.setRequestHeader("Content-Type", "application/json");
                 request.setRequestHeader("Authorization", hashHmac);
                 try {
@@ -2457,7 +2457,7 @@ var gameanalytics;
                         callback(request, url, callback2, args);
                     }
                 };
-                request.open("POST", url, true);
+                request.open("GET", url, true);
                 request.setRequestHeader("Content-Type", "application/json");
                 request.setRequestHeader("Authorization", authorization);
                 if (gzip) {
